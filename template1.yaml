@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+
+Resources:
+
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: devops-portfolio-anant-cf-2026-01
+ 
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties: 
+      InstanceType: t3.micro
+      ImageId: ami-0e12ffc2dd465f6e4
+      IamInstanceProfile: Profile-1
+      KeyName: server1
+
+      SecurityGroupIds:
+        - sg-045d31662d55384de
+ 
+      Tags:
+        - Key: Name
+          Value: server2-cf
