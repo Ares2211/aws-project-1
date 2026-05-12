@@ -40,3 +40,4 @@ S3 Bucket
 
 ```bash
 aws cloudformation create-stack --stack-name devops-project1 --template-body file://template1.yaml
+CI/CD test update
