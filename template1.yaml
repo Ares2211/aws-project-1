@@ -5,7 +5,7 @@ Resources:
   S3Bucket:
     Type: AWS::S3::Bucket
     Properties:
-      BucketName: devops-portfolio-anant-cf-2026-01
+      BucketName: !Sub devops-${AWS::Stackname}-${AWS::AccountId}
  
   EC2Instance:
     Type: AWS::EC2::Instance
