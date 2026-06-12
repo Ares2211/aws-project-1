@@ -1,5 +1,9 @@
 # AWS Project 1 - EC2 + S3 + IAM + CloudFormation
 
+## Architecture Diagram
+
+![SalesPulse Architecture](./images/Architecture-project-1.jpeg)
+
 ## Architecture
 
 CloudFormation
